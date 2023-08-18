@@ -15,7 +15,7 @@ const getFotoGallery = galleryItems
 	</a> </div>`
 	)
 	.join(" ");
-
+// fotoGallery.innerHTML = getFotoGallery;
 fotoGallery.insertAdjacentHTML('beforeend', getFotoGallery)
 
 fotoGallery.addEventListener("click", getFoto);
