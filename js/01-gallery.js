@@ -15,10 +15,8 @@ const getFotoGallery = galleryItems
 	</a> </div>`
 	)
 	.join(" ");
-// fotoGallery.innerHTML = getFotoGallery;
-fotoGallery.insertAdjacentHTML('beforeend', getFotoGallery)
 
-fotoGallery.addEventListener("click", getFoto);
+fotoGallery.insertAdjacentHTML('beforeend', getFotoGallery)
 
 function getFoto(event) {
 	event.preventDefault();
@@ -34,3 +32,4 @@ function getFoto(event) {
 		}
 	});
 }
+fotoGallery.addEventListener("click", getFoto);
